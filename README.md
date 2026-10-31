@@ -23,7 +23,9 @@ Data storage: CSV/text file
 
 Data Source: No API's, just my own .md files
 
+MVP: Main menu, what if calculator, study time logger, budget tracker, flashcards, load/save feature
 
+Future plans: weekly study plan, budget suggestions, folder loading
 
 Chunked Build Plan:
 1. Setup GIT repo with required initial setup like requirements for this assignment
