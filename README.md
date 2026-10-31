@@ -8,10 +8,6 @@ Idea: I am going to create a Java program that can calculate "what-if" grades, l
 
 
 
-!\[Eisenhower Matrix](docs/eisenhower-matrix.png)
-
-
-
 Tech Stack: 
 languages: Java
 
