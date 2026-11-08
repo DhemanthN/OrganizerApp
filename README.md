@@ -10,6 +10,8 @@ Idea: I am going to create a Java program that can calculate "what-if" grades, l
 
 Tech Stack: 
 languages: Java
+Libraries: java.io, java.util
+
 
 
 
@@ -45,6 +47,11 @@ Chunked Build Plan:
 8\. Build the flashcard setup using util.collections to shuffle and generate a final score
 
 9\. add error handling, and create documentation like README
+
+
+
+
+
 
 
 
