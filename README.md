@@ -15,7 +15,7 @@ languages: Java
 
 
 How it works:
-![System Diagram](<img width="1700" height="2200" alt="System Diagram-1" src="https://github.com/user-attachments/assets/dfe6f467-aa08-45f3-899c-7a430fbe794f" />)
+![System Diagram](System%20Diagram.png)
 
 
 libraries/commands: I/O (BufferedReader, InputStreamReader, FileReader, FileWriter, PrintWriter), Util for ArrayLists, LocalDate (time stamping for study dates), Util.collections (shuffling/randomizing)
