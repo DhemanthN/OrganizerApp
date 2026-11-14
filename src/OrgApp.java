@@ -2,10 +2,11 @@ import java.io.*;
 import java.util.*;
 
 public class OrgApp {
-
+    //creates the objects to run seperate functions of program
     private ArrayList<String> loadedLines = new ArrayList<>();
     private GradeCalculator grades = new GradeCalculator();
     private StudyLogger studyLog = new StudyLogger();
+    private BudgetTracker budget = new BudgetTracker();
 
     void main() {
         IO.println("OrganizerApp");
@@ -16,10 +17,10 @@ public class OrgApp {
 
     private void loadFiles() {
         IO.println("Enter files to load. Leave blank when done.");
-        String filename = IO.readln("File name: ");
+        String filename = IO.readln("File name (or enter): ");
         while (!filename.isEmpty()) {
             readFile(filename);
-            filename = IO.readln("File name: ");
+            filename = IO.readln("File name (or enter): ");
         }
     }
 
@@ -42,17 +43,19 @@ public class OrgApp {
     private void runMenu() {
         boolean running = true;
         while (running) {
-            IO.println("\n1. Grades\n2. Study log\n3. Budget\n4. Flashcards\n5. Exit");
+            IO.println("\n1. Grades\n2. Study log\n3. Budget\n4. Flashcards\n5. Exit ");
             String choice = IO.readln("Choose an option: ");
             if (choice.equals("1")) {
                 grades.run();
             } else if (choice.equals("2")) {
-            studyLog.run();
-                } else if (choice.equals("3") || choice.equals("4")) {
-                    IO.println("Coming soon.");
-                } else if (choice.equals("5")) {
+                studyLog.run();
+            } else if (choice.equals("3")) {
+                budget.run();
+            } else if (choice.equals("4")) {
+                IO.println("Coming soon.");
+            } else if (choice.equals("5")) {
                 running = false;
-                } else {
+            } else {
                 IO.println("Please enter 1-5.");
             }
         }
