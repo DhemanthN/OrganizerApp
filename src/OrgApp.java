@@ -5,6 +5,7 @@ public class OrgApp {
 
     private ArrayList<String> loadedLines = new ArrayList<>();
     private GradeCalculator grades = new GradeCalculator();
+    private StudyLogger studyLog = new StudyLogger();
 
     void main() {
         IO.println("OrganizerApp");
@@ -45,11 +46,13 @@ public class OrgApp {
             String choice = IO.readln("Choose an option: ");
             if (choice.equals("1")) {
                 grades.run();
-            } else if (choice.equals("2") || choice.equals("3") || choice.equals("4")) {
-                IO.println("Coming soon.");
-            } else if (choice.equals("5")) {
+            } else if (choice.equals("2")) {
+            studyLog.run();
+                } else if (choice.equals("3") || choice.equals("4")) {
+                    IO.println("Coming soon.");
+                } else if (choice.equals("5")) {
                 running = false;
-            } else {
+                } else {
                 IO.println("Please enter 1-5.");
             }
         }
