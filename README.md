@@ -15,7 +15,7 @@ languages: Java
 
 
 How it works:
-![System Diagram](System%20Diagram.pdf)
+![System Diagram](System%20Diagram.png)
 
 
 libraries/commands: I/O (BufferedReader, InputStreamReader, FileReader, FileWriter, PrintWriter), Util for ArrayLists, LocalDate (time stamping for study dates), Util.collections (shuffling/randomizing)
