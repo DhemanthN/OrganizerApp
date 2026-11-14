@@ -1,3 +1,5 @@
+Project name: OrganizerApp
+
 Function: Uses Java command line that keeps my grade, study time, budget, and notes organized and in one place.
 
 
@@ -11,6 +13,9 @@ Idea: I am going to create a Java program that can calculate "what-if" grades, l
 Tech Stack: 
 languages: Java
 
+
+How it works:
+![System Diagram](System%20Diagram.png)
 
 
 libraries/commands: I/O (BufferedReader, InputStreamReader, FileReader, FileWriter, PrintWriter), Util for ArrayLists, LocalDate (time stamping for study dates), Util.collections (shuffling/randomizing)
@@ -45,6 +50,11 @@ Chunked Build Plan:
 8\. Build the flashcard setup using util.collections to shuffle and generate a final score
 
 9\. add error handling, and create documentation like README
+
+
+
+
+
 
 
 
