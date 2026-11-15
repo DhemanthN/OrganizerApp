@@ -7,6 +7,7 @@ public class OrgApp {
     private GradeCalculator grades = new GradeCalculator();
     private StudyLogger studyLog = new StudyLogger();
     private BudgetTracker budget = new BudgetTracker();
+    private Flashcards flashcards = new Flashcards();
 
     void main() {
         IO.println("OrganizerApp");
@@ -52,7 +53,7 @@ public class OrgApp {
             } else if (choice.equals("3")) {
                 budget.run();
             } else if (choice.equals("4")) {
-                IO.println("Coming soon.");
+                flashcards.run();
             } else if (choice.equals("5")) {
                 running = false;
             } else {
