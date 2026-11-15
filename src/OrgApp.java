@@ -2,8 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class OrgApp {
-    //creates the objects to run seperate functions of program
-    private ArrayList<String> loadedLines = new ArrayList<>();
+
     private GradeCalculator grades = new GradeCalculator();
     private StudyLogger studyLog = new StudyLogger();
     private BudgetTracker budget = new BudgetTracker();
@@ -11,40 +10,14 @@ public class OrgApp {
 
     void main() {
         IO.println("OrganizerApp");
-        loadFiles();
         runMenu();
         IO.println("Goodbye!");
-    }
-
-    private void loadFiles() {
-        IO.println("Enter files to load. Leave blank when done.");
-        String filename = IO.readln("File name (or enter): ");
-        while (!filename.isEmpty()) {
-            readFile(filename);
-            filename = IO.readln("File name (or enter): ");
-        }
-    }
-
-    // stores lines now so flashcards can parse them later
-    private void readFile(String filename) {
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader(filename));
-            String line = reader.readLine();
-            while (line != null) {
-                loadedLines.add(line);
-                line = reader.readLine();
-            }
-            reader.close();
-            IO.println("Loaded " + filename);
-        } catch (IOException e) {
-            IO.println("Could not read " + filename);
-        }
     }
 
     private void runMenu() {
         boolean running = true;
         while (running) {
-            IO.println("\n1. Grades\n2. Study log\n3. Budget\n4. Flashcards\n5. Exit ");
+            IO.println("\n1. Grades\n2. Study log\n3. Budget\n4. Flashcards\n5. Exit");
             String choice = IO.readln("Choose an option: ");
             if (choice.equals("1")) {
                 grades.run();
