@@ -45,7 +45,7 @@ Goodbye!
 How it works:
 ![System Diagram](System%20Diagram.png)
 
-How it works: The user types the number for the "task" they want to accomplish and inputs required information to get an output from the task that matches the initial task name.
+The user types the number for the "task" they want to accomplish and inputs required information to get an output from the task that matches the initial task name.
 
 libraries/commands: I/O (BufferedReader, InputStreamReader, FileReader, FileWriter, PrintWriter), Util for ArrayLists, LocalDate (time stamping for study dates), Util.collections (shuffling/randomizing)
 
