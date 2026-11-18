@@ -19,13 +19,12 @@ Setup is the clone the repo, compile and finally run!
 
 Example run:
 
- === OrganizerApp ===
-
- 1. Grades
- 2. Study log
- 3. Budget
- 4. Flashcards
- 5. Exit
+=== OrganizerApp === 
+1. Grades
+2. Study log
+3. Budget
+4. Flashcards
+5. Exit
 
 Choose an option: 1
 Class name: CS193
@@ -33,14 +32,13 @@ Current grade (%): 54
 Percent of class graded so far: 80
 Target final grade (%): 60
 You need 84.0% on the rest of CS193.
-
- 1. Grades
- 2. Study log
- 3. Budget
- 4. Flashcards
- 5. Exit
- Choose an option: 
-
+1. Grades
+2. Study log
+3. Budget
+4. Flashcards
+5. Exit
+Choose an option: 5
+Goodbye!
 
 How it works:
 ![System Diagram](System%20Diagram.png)
