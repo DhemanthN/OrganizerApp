@@ -15,7 +15,7 @@ languages: Java (JDK 25)
 Libraries: java.io, java.util, java.time
 Data storage is in csv files
 
-Setup is the clone the repo, compile and finally run!
+Setup is the clone the repo, compile and finally run!                                                          
 Flashcards usage info: Please format the .md like the following
 Question :: Answer
 
@@ -38,7 +38,7 @@ You need 84.0% on the rest of CS193.
 2. Study log                                   
 3. Budget                                   
 4. Flashcards                                   
-5. Exit                                   
+5. Exit                            
 Choose an option: 5                                   
 Goodbye!                                   
 
