@@ -19,6 +19,12 @@ Setup is the clone the repo, compile and finally run!
 Flashcards usage info: Please format the .md like the following                          
 Question :: Answer
 
+commands to run:
+git clone https://github.com/DhemanthN/OrganizerApp
+cd OrganizerApp
+javac -d out src/*.java
+java -cp out OrgApp
+
 Example run:
 
 === OrganizerApp === 
