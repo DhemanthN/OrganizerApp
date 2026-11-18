@@ -16,6 +16,8 @@ Libraries: java.io, java.util, java.time
 Data storage is in csv files
 
 Setup is the clone the repo, compile and finally run!
+Flashcards usage info: Please format the .md like the following
+Question :: Answer
 
 Example run:
 
