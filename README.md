@@ -26,7 +26,7 @@ Example run:
 4. Flashcards
 5. Exit
 
-Choose an option: 1
+Choose an option: 1                                   
 Class name: CS193
 Current grade (%): 54
 Percent of class graded so far: 80
