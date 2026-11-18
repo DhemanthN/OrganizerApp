@@ -5,7 +5,11 @@ public class BudgetTracker {
 
     private String budgetFile = "data/budget.csv";
 
+
+
     public void run() {
+        // warns at 80% usage so there is still time to cut back before going over
+
         String category = IO.readln("Category: ");
         double amount = readAmount("Amount spent: $");
         double budget = readAmount("Monthly budget: $");
@@ -15,6 +19,15 @@ public class BudgetTracker {
         IO.println("Spent on " + category + " this month: $" + String.format("%.2f", monthTotal(category)));
         IO.println("Total spent this month: $" + String.format("%.2f", monthTotal));
         IO.println("Left in budget: $" + String.format("%.2f", budget - monthTotal));
+        printWarning(monthTotal, budget);
+    }
+
+    private void printWarning(double spent, double budget) {
+        if (spent > budget) {
+            IO.println("WARNING: You are over budget by $" + String.format("%.2f", spent - budget));
+        } else if (spent >= budget * 0.8) {
+            IO.println("WARNING: You have used " + String.format("%.0f", spent / budget * 100) + "% of your budget");
+        }
     }
 
     // blank category means add up every category
@@ -48,7 +61,8 @@ public class BudgetTracker {
             IO.println("Could not save expense.");
         }
     }
-        //reader
+
+    //reads the amount
     private double readAmount(String prompt) {
         while (true) {
             try {
