@@ -11,18 +11,43 @@ Idea: I am going to create a Java program that can calculate "what-if" grades, l
 
 
 Tech Stack: 
-languages: Java
+languages: Java (JDK 25)
+Libraries: java.io, java.util, java.time
+Data storage is in csv files
 
+Setup is the clone the repo, compile and finally run!                                                          
+Flashcards usage info: Please format the .md like the following                          
+Question :: Answer
+
+Example run:
+
+=== OrganizerApp === 
+1. Grades
+2. Study log
+3. Budget
+4. Flashcards
+5. Exit
+
+Choose an option: 1                                                                      
+Class name: CS193                                                                        
+Current grade (%): 54                                                                      
+Percent of class graded so far: 80                                                                      
+Target final grade (%): 60                                   
+You need 84.0% on the rest of CS193.                                                                      
+1. Grades                                   
+2. Study log                                   
+3. Budget                                   
+4. Flashcards                                   
+5. Exit                            
+Choose an option: 5                                   
+Goodbye!                                   
 
 How it works:
 ![System Diagram](System%20Diagram.png)
 
+The user types the number for the "task" they want to accomplish and inputs required information to get an output from the task that matches the initial task name.
 
 libraries/commands: I/O (BufferedReader, InputStreamReader, FileReader, FileWriter, PrintWriter), Util for ArrayLists, LocalDate (time stamping for study dates), Util.collections (shuffling/randomizing)
-
-
-
-Data storage: CSV/text file
 
 
 
@@ -33,23 +58,33 @@ MVP: Main menu, what if calculator, study time logger, budget tracker, flashcard
 Future plans: weekly study plan, budget suggestions, folder loading
 
 Chunked Build Plan:
-1. Setup GIT repo with required initial setup like requirements for this assignment
+- [x] Setup GIT repo with required initial setup like requirements for this assignment
 
-2\. Build main menu with BufferedReader or other IO commands
+- [x] Build main menu with BufferedReader or other IO commands
 
-3\. Build the what if grade calculator taking current grade and adding the "needed score" for future assignments
+- [x] Build the what if grade calculator taking current grade and adding the "needed score" for future assignments
 
-4\. Add save/load feature, using FileWriter or other IO commands to output what that session did
+- [x] Add save/load feature, using FileWriter or other IO commands to output what that session did
 
-5\. Build the study time logger with LocalDate, and creating totals per class
+- [x] Build the study time logger with LocalDate, and creating totals per class
 
-6.Build monthly budget tracker for specific catagories
+- [x] Build monthly budget tracker for specific catagories
 
-7\. Read Obsidian .md files and parse using some type of "question \_\_ answer" format and create Flashcard Objects
+- [x]  Read Obsidian .md files and parse using some type of "question \_\_ answer" format and create Flashcard Objects
 
-8\. Build the flashcard setup using util.collections to shuffle and generate a final score
+- [x] Build the flashcard setup using util.collections to shuffle and generate a final score
 
-9\. add error handling, and create documentation like README
+- [x] add error handling, and create documentation like README
+
+Schedule feature implementation:
+- [x] Budget-issues (branched)
+- [ ] Weekly study plan
+- [ ] Folder loading
+
+Demo:
+
+
+
 
 
 
