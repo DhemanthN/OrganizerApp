@@ -50,10 +50,6 @@ libraries/commands: I/O (BufferedReader, InputStreamReader, FileReader, FileWrit
 
 
 
-Data storage: CSV/text file
-
-
-
 Data Source: No API's, just my own .md files
 
 MVP: Main menu, what if calculator, study time logger, budget tracker, flashcards, load/save feature
@@ -61,23 +57,33 @@ MVP: Main menu, what if calculator, study time logger, budget tracker, flashcard
 Future plans: weekly study plan, budget suggestions, folder loading
 
 Chunked Build Plan:
-1.[x] Setup GIT repo with required initial setup like requirements for this assignment
+- [x] Setup GIT repo with required initial setup like requirements for this assignment
 
-2.[x] Build main menu with BufferedReader or other IO commands
+- [x] Build main menu with BufferedReader or other IO commands
 
-3.[x] Build the what if grade calculator taking current grade and adding the "needed score" for future assignments
+- [x] Build the what if grade calculator taking current grade and adding the "needed score" for future assignments
 
-4.[x] Add save/load feature, using FileWriter or other IO commands to output what that session did
+- [x] Add save/load feature, using FileWriter or other IO commands to output what that session did
 
-5.[x] Build the study time logger with LocalDate, and creating totals per class
+- [x] Build the study time logger with LocalDate, and creating totals per class
 
-6.[x] Build monthly budget tracker for specific catagories
+- [x] Build monthly budget tracker for specific catagories
 
-7.[x] Read Obsidian .md files and parse using some type of "question \_\_ answer" format and create Flashcard Objects
+- [x]  Read Obsidian .md files and parse using some type of "question \_\_ answer" format and create Flashcard Objects
 
-8.[x] Build the flashcard setup using util.collections to shuffle and generate a final score
+- [x] Build the flashcard setup using util.collections to shuffle and generate a final score
 
-9.[x] add error handling, and create documentation like README
+- [x] add error handling, and create documentation like README
+
+Schedule feature implementation:
+- [x] Budget-issues (branched)
+- [ ] Weekly study plan
+- [ ] Folder loading
+
+Demo:
+
+
+
 
 
 
