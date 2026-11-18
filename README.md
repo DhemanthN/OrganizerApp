@@ -67,7 +67,7 @@ Chunked Build Plan:
 
 3.[x] Build the what if grade calculator taking current grade and adding the "needed score" for future assignments
 
-4. [x] Add save/load feature, using FileWriter or other IO commands to output what that session did
+4.[x] Add save/load feature, using FileWriter or other IO commands to output what that session did
 
 5.[x] Build the study time logger with LocalDate, and creating totals per class
 
