@@ -21,9 +21,7 @@ Question :: Answer
 
 commands to run:
 git clone https://github.com/DhemanthN/OrganizerApp                                                                         
-cd OrganizerApp                                                                                                             
-javac -d out src/*.java                                                                                                    
-java -cp out OrgApp                                                                                                        
+cd OrganizerApp                                                                                                                                                                                                                 
 
 Example run:
 
