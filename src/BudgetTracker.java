@@ -8,7 +8,6 @@ public class BudgetTracker {
 
 
     public void run() {
-        // warns at 80% usage so there is still time to cut back before going over
 
         String category = IO.readln("Category: ");
         double amount = readAmount("Amount spent: $");
@@ -21,7 +20,7 @@ public class BudgetTracker {
         IO.println("Left in budget: $" + String.format("%.2f", budget - monthTotal));
         printWarning(monthTotal, budget);
     }
-
+    // warns at 80% usage so there is still time to cut back before going over
     private void printWarning(double spent, double budget) {
         if (spent > budget) {
             IO.println("WARNING: You are over budget by $" + String.format("%.2f", spent - budget));
